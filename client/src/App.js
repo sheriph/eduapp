@@ -26,8 +26,8 @@ const App = () => {
     };
   }, []);
   return (
-    <Container disableGutters className={classes.root}>
-      <Container disableGutters className={classes.root}>
+    <Container maxWidth={false} disableGutters className={classes.root}>
+      <Container maxWidth={false} disableGutters className={classes.root}>
         <CustomStepper />
       </Container>
       <Switch>

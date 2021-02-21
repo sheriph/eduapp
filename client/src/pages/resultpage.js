@@ -145,18 +145,22 @@ const ResultPage = () => {
   };
 
   return (
-    <Container disableGutters>
+    <Container maxWidth={false} disableGutters>
       <Grid
         className={classes.background}
         container
+        justify="center"
+        alignItems="center"
+        alignContent="center"
         component={Container}
+        maxWidth={false}
         style={{
-          margin: "-1px 0 0px 0",
           paddingTop: "30px",
           paddingBottom: "30px",
+          marginTop: "-1px",
         }}
       >
-        <Grid item>
+        <Grid item xs={12} sm={6}>
           <SearchForm setcountry={country} setfield={field} setlevel={level} />
         </Grid>
       </Grid>

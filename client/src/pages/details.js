@@ -77,16 +77,17 @@ const Details = () => {
     type,
   } = details;
   return (
-    <Container disableGutters>
+    <Container maxWidth={false} disableGutters>
       <Grid
         component={Container}
+        maxWidth={false}
         className={classes.background}
         container
         justify="center"
         style={{
-          margin: "-1px 0 0px 0",
           paddingTop: "30px",
           paddingBottom: "30px",
+          marginTop: "-1px",
         }}
       >
         <Grid item component={Paper}>
@@ -250,7 +251,7 @@ const Details = () => {
         <Grid
           container
           component={Container}
-          style={{ margin: "10px 0 10px 0", padding: "10px" }}
+          style={{ marginTop: "10px", marginBottom: "10px", padding: "10px" }}
         >
           <Grid item xs={12}>
             <Typography align="center">Program Description</Typography>
@@ -262,7 +263,7 @@ const Details = () => {
         <Grid
           container
           component={Container}
-          style={{ margin: "10px 0 10px 0", padding: "10px" }}
+          style={{ marginTop: "10px", marginBottom: "10px", padding: "10px" }}
         >
           <Grid item xs={12}>
             <Typography align="center">Program Contents</Typography>
@@ -276,7 +277,7 @@ const Details = () => {
         <Grid
           container
           component={Container}
-          style={{ margin: "10px 0 10px 0", padding: "10px" }}
+          style={{ marginTop: "10px", marginBottom: "10px", padding: "10px" }}
         >
           <Grid item xs={12}>
             <Typography align="center">Tuition Fees</Typography>
@@ -290,7 +291,7 @@ const Details = () => {
         <Grid
           container
           component={Container}
-          style={{ margin: "10px 0 30px 0", padding: "10px" }}
+          style={{ marginTop: "10px", marginBottom: "10px", padding: "10px" }}
         >
           <Grid item xs={12}>
             <Typography align="center">Admission Requirements</Typography>

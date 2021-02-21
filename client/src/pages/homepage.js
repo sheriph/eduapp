@@ -54,9 +54,10 @@ const HomePage = () => {
 
   if (!mounted) return <>loading</>;
   return (
-    <Container disableGutters style={{ margin: "0" }}>
+    <Container maxWidth={false} disableGutters style={{ margin: "0" }}>
       <Grid
         component={Container}
+        maxWidth={false}
         container
         className={classes.background}
         justify="center"
@@ -64,7 +65,8 @@ const HomePage = () => {
       >
         <Grid
           item
-          xs
+          component={Container}
+          xs={12}
           style={{
             maxWidth: "max-content",
             marginBottom: "50px",
