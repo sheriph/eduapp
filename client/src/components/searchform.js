@@ -62,9 +62,10 @@ const SearchForm = ({ setcountry, setfield, setlevel }) => {
   };
 
   return (
-    <Container disableGutters>
+    <Container maxWidth={false} disableGutters>
+    
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Grid container spacing={1}>
+        <Grid justify="center" container spacing={1}>
           <Grid item xs={6} md={3}>
             <Controller
               name="country"
