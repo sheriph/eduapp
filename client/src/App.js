@@ -16,6 +16,9 @@ const styles = makeStyles((theme) => ({
 const App = () => {
   const classes = styles();
   useEffect(() => {
+    window.iFrameResizer = {
+      targetOrigin: "https://naijagoingabroad.com",
+    };
     const script = document.createElement("script");
     script.type = "text/javascript";
     script.src = "../js/iframeResizer.contentWindow.min.js";
