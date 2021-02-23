@@ -123,7 +123,9 @@ const ResultPage = () => {
     await axios
       .post("/schools", prevState)
       .then((response) => {
-        window.scrollTo(0, 0);
+        document.body.scrollIntoView();
+        // window.scrollTo(0, 0);
+
         setisloading(false);
         setenter(false);
         const [res, totalResults] = response.data.results;
