@@ -42,6 +42,8 @@ const ResultPage = () => {
   const [enter, setenter] = useState(false);
 
   useEffect(() => {
+    console.log("mounting")
+    window.scrollTo(0, 0);
     if (location.state) {
       window.localStorage.setItem("location", JSON.stringify(location));
       const {
