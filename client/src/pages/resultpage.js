@@ -123,11 +123,11 @@ const ResultPage = () => {
     await axios
       .post("/schools", prevState)
       .then((response) => {
+        window.scrollTo(0, 0);
         setisloading(false);
         setenter(false);
         const [res, totalResults] = response.data.results;
         const state = { ...prevState, res: res, totalResults: totalResults };
-        window.scroll(0, 0);
         history.push({
           pathname: "/results",
           state: state,
