@@ -20,10 +20,8 @@ const theme = createMuiTheme({
   },
 });
 
-
-
 ReactDOM.render(
-  <BrowserRouter forceRefresh={true}>
+  <BrowserRouter forceRefresh={false}>
     <RecoilRoot>
       <SnackbarProvider maxSnack={3}>
         <ThemeProvider theme={theme}>

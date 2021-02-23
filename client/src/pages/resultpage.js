@@ -42,7 +42,6 @@ const ResultPage = () => {
   const [enter, setenter] = useState(false);
 
   useEffect(() => {
-    console.log("mounting")
     if (location.state) {
       window.localStorage.setItem("location", JSON.stringify(location));
       const {
@@ -128,7 +127,7 @@ const ResultPage = () => {
         setenter(false);
         const [res, totalResults] = response.data.results;
         const state = { ...prevState, res: res, totalResults: totalResults };
-
+        window.scrollTo(0, 0);
         history.push({
           pathname: "/results",
           state: state,
