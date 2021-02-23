@@ -43,7 +43,6 @@ const ResultPage = () => {
 
   useEffect(() => {
     console.log("mounting")
-    window.scrollTo(0, 0);
     if (location.state) {
       window.localStorage.setItem("location", JSON.stringify(location));
       const {
@@ -130,7 +129,7 @@ const ResultPage = () => {
         const [res, totalResults] = response.data.results;
         const state = { ...prevState, res: res, totalResults: totalResults };
 
-        history.replace({
+        history.push({
           pathname: "/results",
           state: state,
         });
