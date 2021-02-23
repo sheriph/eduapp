@@ -127,7 +127,7 @@ const ResultPage = () => {
         setenter(false);
         const [res, totalResults] = response.data.results;
         const state = { ...prevState, res: res, totalResults: totalResults };
-        window.scrollTo(0, 0);
+        window.scroll(0, 0);
         history.push({
           pathname: "/results",
           state: state,
