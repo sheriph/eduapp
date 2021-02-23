@@ -12,7 +12,7 @@ export const getdbName = (country) => {
       return { name: "czech_schools" };
     case "Denmark":
       return { name: "denmark_schools" };
-    case "Estonian":
+    case "Estonia":
       return { name: "estonia_schools" };
     case "Finland":
       return { name: "finland_schools" };
