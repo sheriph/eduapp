@@ -183,7 +183,10 @@ const ResultPage = () => {
             >
               <Grid item>
                 <Typography align="center" variant="h4">
-                  No Results Found. Try a New Search
+                  No Results Found. Try a New Search.
+                </Typography>
+                <Typography>
+                  Hint: You can try a different field/level combination
                 </Typography>
               </Grid>
             </Grid>
